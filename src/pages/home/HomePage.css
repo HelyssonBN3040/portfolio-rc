@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+}
+.list-projects ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: 120px;
+    height: 40px;
+    background-color: #646cff;
+    color: white;
+    transition: 0.5s;
+}
+.options:hover{
+    background-color: #4f55c4;
+}
