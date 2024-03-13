@@ -2,7 +2,14 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <div className="container flex m-2">
+        <div className="title-header">
+          <h1>Aqui estão algum dos Projetos que já realizei...</h1>
+        </div>
+
+      </div>
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@
 .list-projects ul{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -13,10 +13,11 @@
     border-radius: 9px;
     width: 120px;
     height: 40px;
-    background-color: #646cff;
+    background-color: #18181a;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 .options:hover{
-    background-color: #4f55c4;
+    background-color: #272525;
 }
