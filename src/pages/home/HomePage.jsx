@@ -1,13 +1,14 @@
 import React from 'react'
 import "./HomePage.css"
 import { Link } from 'react-router-dom'
+import Logo from "../../../LOGOS/HTML LOGO.png";
 
 const HomePage = () => {
   return (
     <>
-      <div className="container">
+      <div className="min-h-screen flex  flex-col justify-center items-center gap-y-9 text-center">
         <div className="container-header">
-          <h1>Seja Bem-Vindo ao Meu Portfolio!</h1>
+          <h1 className='text-3xl font-bold'>Seja Bem-Vindo ao Meu Portfolio!</h1>
         </div>
         <div className="list-projects">
           <ul>
@@ -18,7 +19,9 @@ const HomePage = () => {
           </ul>
         </div>
         <div className="tecnologies">
-          
+          <div className='animate-spin '>
+            <img src={Logo} alt="" />
+          </div>
         </div>
       </div>
     </>
