@@ -21,3 +21,14 @@
 .options:hover{
     background-color: #272525;
 }
+.btn-header{
+    background-color: #0EEA23;
+    opacity: 0.7;
+    
+    
+}
+.font-header{
+    color:black ;
+    font-weight: bold;
+    opacity: 1;
+}

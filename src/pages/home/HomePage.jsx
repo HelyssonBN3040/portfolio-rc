@@ -1,61 +1,44 @@
-import React, { useEffect, useState } from 'react'
 import "./HomePage.css"
-import { Link } from 'react-router-dom'
 import LogoHtml from "../../../public/html-logo.png";
 import LogoCss from "../../../public/css-logo.png";
 import LogoJs from "../../../public/js-logo.png";
 import LogoPy from "../../../public/py-logo.png";
 import LogoReact from "../../../public/react-logo.png";
 import LogoTailwind from "../../../public/tailwind-logo.png";
+import Face from "../../../public/image-face.png"
+import Navbar from '../../components/navbar/TransitionNav';
+import LogoGit from "../../../public/logo-github.png";
+import LogoLink from "../../../public/logo-link.png";
 
 
 const HomePage = () => {
-
-  const [user, setUser] = useState({ name: '', avatar: '' })
-
-  useEffect(() => {
-    //corpo
-    async function fetchData() {
-      const response = await fetch('https://api.github.com/users/helyssonbn3040')
-      const data = await response.json();
-      setUser({
-        name: data.name,
-        avatar: data.avatar_url
-      })
-    }
-    fetchData();
-
-  }, []);
-
   return (
     <>
-      <div className='m-5'>
-        <div className="flex  justify-evenly ">
-          <div className="flex gap-1 items-center ">
-            <strong className='text-xl'>{user.name}</strong>
-            <img src={user.avatar} className='w-11 rounded-full' alt="foto de perfil" />
-          </div>
-          <div className="list-projects">
-            <ul>
-              <li><Link className="options drop-shadow-2xl ..." to="/projects">Projects</Link></li>
-              <li><Link className="options drop-shadow-2xl ..." to="/about">Sobre Mim</Link></li>
-              <li><Link className="options drop-shadow-2xl ..." to="/contact">Contatos</Link></li>
-              <li><Link className="options drop-shadow-2xl ..." to="/certificates">Certificados</Link></li>
-            </ul>
-          </div>
-        </div>
+      <div className='m-5 duration-75'>
+        <Navbar />
       </div>
-      <div className=" flex flex-col gap-y-10   items-center">
-        <div className="flex  gap-3 flex-col my-20 w-4/6">
-          <div className='flex gap-1 rounded-3xl bg-slate-950 w-32 h-8 items-center justify-center'>
-          👋 <p>Saudações!</p>
+      <div className=" flex flex-col  flex-wrap  items-center">
+        <div className="flex flex-row items-center my-16 gap-10 flex-wrap justify-center m-3">
+          <div className='flex flex-col gap-5'>
+            <div className='flex rounded-3xl w-36 h-10 items-center justify-center btn-header'>
+              <p className="font-header">👋 Saudações!</p>
+            </div>
+            <strong className='text-4xl'>Helysson Cavalcante</strong>
+            <p>Front-end developer</p>
+            <div className="flex  flex-row gap-4">
+              <a href="https://github.com/HelyssonBN3040" className="w-6 hover:scale-125 transition-all"><img src={LogoGit} alt="" /></a>
+              <a href="https://www.linkedin.com/in/helysson-nascimento-085a122b4/" className="w-6 hover:scale-125 transition-all"><img src={LogoLink} alt="" /></a>
+            </div>
           </div>
-          <strong className='text-4xl'>Helysson Cavalcante</strong>
-          <p w-80>Front-end developer</p>
+          <div >
+            <img className='w-full' src={Face} alt="" />
+          </div>
         </div>
 
-        <strong>Aqui São algumas das tecnologias que tenho conhecimento...</strong>
-        <div className="flex items-center justify-center flex-wrap gap-4">
+        <div className='flex gap-1 rounded-3xl bg-slate-950 w-48 h-10 items-center justify-center btn-header'>
+          <p className="font-header">👨‍💻 Skills - Experiências</p>
+        </div>
+        <div className="flex items-center justify-center flex-wrap gap-6 my-10">
           <div className='animate-pulse  w-16'>
             <img src={LogoHtml} alt="" className='drop-shadow-2xl ...' />
           </div>
