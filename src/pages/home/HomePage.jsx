@@ -9,6 +9,7 @@ import Face from "../../../public/image-face.png"
 import Navbar from '../../components/navbar/TransitionNav';
 import LogoGit from "../../../public/logo-github.png";
 import LogoLink from "../../../public/logo-link.png";
+import BackToTopButton from "../../components/BackToTop/BackToTopButton";
 
 
 const HomePage = () => {
@@ -57,6 +58,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <BackToTopButton/>
     </>
   )
 }
