@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../components/navbar/TransitionNav'
 
 const Certificados = () => {
   return (
-    <div>Certificados</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 

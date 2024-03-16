@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../components/navbar/TransitionNav'
 
 const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../components/navbar/TransitionNav'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 
