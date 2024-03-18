@@ -19,7 +19,7 @@ const HomePage = () => {
       <div className=" flex flex-col  flex-wrap  items-center">
         <div className="flex flex-row items-center my-16 gap-10 flex-wrap justify-center m-3">
           <div className='flex flex-col gap-5'>
-            <div className='flex rounded-3xl w-36 h-10 items-center justify-center btn-header'>
+            <div className='flex rounded-3xl w-36 h-10 opacity-85 items-center justify-center btn-header'>
               <p className="font-header">👋 Saudações!</p>
             </div>
             <strong className='text-4xl'>Helysson Cavalcante</strong>
@@ -34,7 +34,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className='flex gap-1 rounded-3xl bg-slate-950 w-48 h-10 items-center justify-center btn-header'>
+        <div className='flex gap-1 rounded-3xl opacity-85 bg-slate-950 w-48 h-10 items-center justify-center btn-header'>
           <p className="font-header">👨‍💻 Skills - Experiências</p>
         </div>
         <div className="flex items-center justify-center flex-wrap gap-6 my-10">

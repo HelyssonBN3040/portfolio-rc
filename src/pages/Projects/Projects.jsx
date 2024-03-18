@@ -6,21 +6,23 @@ import BackToTopButton from '../../components/BackToTop/BackToTopButton'
 
 const Projects = () => {
   return (
-    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-      <Navbar />
-      <div className='flex flex-col gap-10'>
-        <div className='mx-10 '>
-          <div>
+    <div className="mx-10">
+      <div className=''>
+        <Navbar />
+        <div className='flex flex-col gap-10'>
+          <div className=' flex flex-col gap-3'>
             <div>
-              <p>🔗Portfolio</p>
+              <div className='flex rounded-3xl w-28 opacity-95 h-10 items-center justify-center btn-header'>
+                <p>🔗Portfolio</p>
+              </div>
             </div>
+            <strong className='text-4xl'>Trabalhos e Projetos</strong>
           </div>
-          <strong className='text-4xl'>Trabalhos e Projetos</strong>
+          <CardProject />
         </div>
-        <CardProject/>
+        <BackToTopButton />
+        <Footer />
       </div>
-      <BackToTopButton/>
-      <Footer/>
     </div>
   )
 }
