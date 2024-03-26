@@ -16,7 +16,6 @@ import { MagicMotion } from "react-magic-motion";
 const HomePage = () => {
   return (
     <MagicMotion>
-
       <div className="mx-10">
         <Navbar />
         <div className=" flex flex-col  flex-wrap  items-center">
