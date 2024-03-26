@@ -13,7 +13,7 @@ const CardProject = () => {
                     <div className='bg-green-500 text-white rounded-full py-1 px-2 text-xs'>Online</div>
                     <div className='bg-blue-500 text-white rounded-full py-1 px-2 text-xs'>React</div>
                 </div>
-                <a href="https://lista-de-presen-a.vercel.app/" className='block hover:opacity-75 transition-opacity duration-300'>
+                <a href="https://lista-de-presen-a.vercel.app/" className='block hover:opacity-75 transition-opacity duration-300' target='_blank'>
                     <img src={ListaPresen} alt="Imagem do Projeto" className='w-full h-auto rounded-lg' />
                 </a>
             </div>
