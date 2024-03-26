@@ -60,7 +60,7 @@ function Navbar() {
                   Certificados
                 </Link>
                 <a href="https://drive.google.com/file/d/1Qxi5ekINuGq6UhctYHARPyMJEqIzQr-0/view?usp=sharing" to="/certificates"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Download CV</a>
+                  target='_blank' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Download CV</a>
               </div>
             </div>
           </div>
