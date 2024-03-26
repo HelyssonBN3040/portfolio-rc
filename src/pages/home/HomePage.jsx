@@ -14,7 +14,7 @@ import BackToTopButton from "../../components/BackToTop/BackToTopButton";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="mx-10">
       <Navbar />
       <div className=" flex flex-col  flex-wrap  items-center">
         <div className="flex flex-row items-center my-16 gap-10 flex-wrap justify-center m-3">
@@ -59,7 +59,7 @@ const HomePage = () => {
         </div>
       </div>
       <BackToTopButton/>
-    </>
+    </div>
   )
 }
 
