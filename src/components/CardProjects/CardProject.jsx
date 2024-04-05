@@ -4,6 +4,7 @@ import ResgitroPage from "../../../public/imgProjects/register-client.png"
 import LBPage from "../../../public/imgProjects/landingpage.png"
 import FacebookClone from "../../../public/imgProjects/facebook-clone.png"
 import Pesquise from "../../../public/imgProjects/blog.png"
+import Tutilab from "../../../public/imgProjects/tutilab.png"
 
 const CardProject = () => {
     return (
@@ -47,6 +48,21 @@ const CardProject = () => {
                 </div>
                 <a href="https://lb-servi-os.vercel.app" className='block hover:opacity-75 transition-opacity duration-300' target='_blank'>
                     <img src={LBPage} alt="Imagem do Projeto" className='w-full h-auto rounded-lg' />
+                </a>
+            </div>
+            <div className='border border-gray-200 rounded-lg overflow-hidden shadow-md max-w-sm transition-transform hover:scale-105'>
+                <div className='p-4'>
+                    <h2 className='text-lg font-semibold mb-2'>Desafio TutiLab</h2>
+                    <p className='text-gray-600 text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div className='flex  gap-2 p-2 mb-4'>
+                    <div className='bg-green-500 text-white rounded-full py-1 px-2 text-xs'>Online</div>
+                    <div className='bg-orange-500 text-white rounded-full py-1 px-2 text-xs'>Html</div>
+                    <div className='bg-blue-500 text-white rounded-full py-1 px-2 text-xs'>CSS</div>
+                    <div className='bg-yellow-600 text-white rounded-full py-1 px-2 text-xs'>JavaScript</div>
+                </div>
+                <a href="https://tutilab-landingpage.vercel.app" className='block hover:opacity-75 transition-opacity duration-300' target='_blank'>
+                    <img src={Tutilab} alt="Imagem do Projeto" className='w-full h-auto rounded-lg' />
                 </a>
             </div>
             <div className='border border-gray-200 rounded-lg overflow-hidden shadow-md max-w-sm transition-transform hover:scale-105'>

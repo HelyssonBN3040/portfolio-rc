@@ -35,8 +35,14 @@ const Contact = () => {
   return (
     <div className='mx-10'>
       <Navbar />
+      <div className='flex rounded-3xl w-28 opacity-95 h-10 items-center justify-center btn-header'>
+          <p>✉️Contato</p>
+        </div>
+        <strong className='text-4xl'>Entre em Contato Comigo</strong>
+        <p className='my-5 text-justify'>Olá, clientes e recrutadores. Essa é uma área expecifica para você entrar em contato diretamente comigo, tirar dúvidas em certos projetos e afins.</p>
       <div className='flex flex-col items-center my-10'>
-        <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg">
+        <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg flex flex-col gap-2">
+        <strong className='text-4xl'>Contato</strong>
           <div className="mb-6">
             <label className="block text-sm font-bold mb-2" htmlFor="user_name">
               Nome Completo

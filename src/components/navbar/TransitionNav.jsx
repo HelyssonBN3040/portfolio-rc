@@ -33,7 +33,7 @@ function Navbar() {
                 <div className="flex items-center space-x-4 duration-75 transition">
                   <Link
                     to="/"
-                    className="underline decoration-1 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                    className="underline decoration-1 text-gray-300 bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                   >
                     Home
                   </Link>

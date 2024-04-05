@@ -10,6 +10,7 @@ const Projects = () => {
     <div className="mx-10">
       <MagicMotion>
         <Navbar />
+        
         <div className='flex flex-col gap-10'>
           <div className=' flex flex-col gap-3'>
             <div>
