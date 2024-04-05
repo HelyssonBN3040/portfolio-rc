@@ -26,7 +26,7 @@ const AboutMe = () => {
               <p className='text-justify'>💡Interesses em desenvolvimento Front-End em React e VueJs.</p>
             </div>
             <p className='text-justify'>🚀Tentando sempre ser um pouquinho melhor do que ontem todos os dias.</p>
-            <a href="" className='flex mt-5 rounded-3xl w-36 h-10 opacity-85 mb-5 items-center justify-center btn-header'>📃Visualizar CV</a>
+            <a href="https://drive.google.com/file/d/1Qxi5ekINuGq6UhctYHARPyMJEqIzQr-0/view?usp=sharing" className='flex mt-5 rounded-3xl w-36 h-10 opacity-85 mb-5 items-center justify-center btn-header' target="_blank">📃Visualizar CV</a>
           </div>
         </div>
         <Footer />
