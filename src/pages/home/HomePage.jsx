@@ -39,24 +39,26 @@ const HomePage = () => {
           <div className='flex gap-1 rounded-3xl opacity-85 bg-slate-950 w-48 h-10 items-center justify-center btn-header'>
             <p className="font-header">👨‍💻 Skills - Experiências</p>
           </div>
+          <strong className="text-4xl mt-4">Tecnologias e Habilidades</strong>
+          <p className="mt-4">Techs que uso no dia-a-dia</p>
           <div className="flex items-center justify-center flex-wrap gap-6 my-10">
             <div className='animate-pulse  w-16'>
-              <img src={LogoHtml} alt="" className='drop-shadow-2xl ...' />
+              <img src={LogoHtml} alt="" className='drop-shadow-2xl' />
             </div>
             <div className='animate-bounce  w-16'>
-              <img src={LogoCss} alt="" className='drop-shadow-2xl ...' />
+              <img src={LogoCss} alt="" className='drop-shadow-2xl' />
             </div>
             <div className='animate-pulse  w-16'>
-              <img src={LogoJs} alt="" className='drop-shadow-2xl ...' />
+              <img src={LogoJs} alt="" className='drop-shadow-2xl' />
             </div>
             <div className=' animate-spin w-16'>
-              <img src={LogoReact} alt="" className='drop-shadow-2xl ...' />
+              <img src={LogoReact} alt="" className='drop-shadow-2xl' />
             </div>
             <div className=' animate-bounce w-16'>
-              <img src={LogoTailwind} alt="" className='drop-shadow-2xl ...' />
+              <img src={LogoTailwind} alt="" className='drop-shadow-2xl' />
             </div>
             <div className=' animate-spin w-16'>
-              <img src={LogoPy} alt="" className='drop-shadow-2xl ...' />
+              <img src={LogoPy} alt="" className='drop-shadow-2xl' />
             </div>
           </div>
         </div>
