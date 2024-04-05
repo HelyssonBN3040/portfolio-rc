@@ -1,80 +1,69 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import Navbar from '../../components/navbar/TransitionNav'
 import Footer from '../../components/Footer/Footer'
 import BackToTopButton from '../../components/BackToTop/BackToTopButton'
-import { MagicMotion } from 'react-magic-motion'
 
 const Contact = () => {
+  const form = useRef();
 
-  const [formValues, setFormValues] = useState({
-    nomeCompleto: '',
-    email: '',
-    texto: ''
-  });
+  const sendEmail = (e) => {
+    e.preventDefault()
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
+    emailjs
+      .sendForm('service_0njm69r', 'template_2i0yvor', form.current, {
+        publicKey: 'UWOuFtxCn8s24ncST',
+      })
+      .then(
+        () => {
+          toast.success("Mensagem Enviada com Sucesso")
+          console.log('SUCCESS!',{
+
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados do formulário
-    console.log(formValues);
-  };
+
+
   return (
     <div className='mx-10'>
-      <MagicMotion>
-        <Navbar />
-        <div className='flex flex-col items-center'>
-          <form onSubmit={handleSubmit} className="w-96">
-            <div>
-              <label htmlFor="nomeCompleto" className="block text-sm font-medium text-gray-700">Nome Completo</label>
-              <input
-                type="text"
-                name="nomeCompleto"
-                id="nomeCompleto"
-                value={formValues.nomeCompleto}
-                onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value={formValues.email}
-                onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              />
-            </div>
-            <div>
-              <label htmlFor="texto" className="block text-sm font-medium text-gray-700">Texto</label>
-              <textarea
-                name="texto"
-                id="texto"
-                value={formValues.texto}
-                onChange={handleChange}
-                rows="4"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Enviar
-            </button>
-          </form>
-        </div>
-        <Footer />
-        <BackToTopButton />
-      </MagicMotion>
+      <Navbar />
+      <div className='flex flex-col items-center my-10'>
+        <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg">
+          <div className="mb-6">
+            <label className="block text-sm font-bold mb-2" htmlFor="user_name">
+              Nome Completo
+            </label>
+            <input type="text" name="user_name" id="user_name" className="shadow appearance-none border rounded w-full py-2 px-3 hover:border-slate-400 transition leading-tight focus:outline-none focus:shadow-outline" required/>
+          </div>
+          <div className="mb-6">
+            <label className="block text-sm font-bold mb-2" htmlFor="user_email">
+              E-mail
+            </label>
+            <input type="email" name="user_email" id="user_email" className="shadow appearance-none border rounded w-full py-2 px-3 hover:border-slate-400 transition leading-tight focus:outline-none focus:shadow-outline" required/>
+          </div>
+          <div className="mb-6">
+            <label className="block  text-sm font-bold mb-2" htmlFor="message">
+              Mensagem
+            </label>
+            <textarea name="message" id="message" className="shadow  appearance-none border rounded w-full py-2 px-3 hover:border-slate-400 transition mb-3 leading-tight focus:outline-none focus:shadow-outline h-32"></textarea>
+          </div>
+          <div className="flex items-center justify-between">
+            <input type="submit" value="Enviar!"  className="bg-green-600 hover:bg-green-700  transition text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer" />
+          </div>
+        </form>
+      </div>
+      <Footer />
+      <BackToTopButton />
+      <ToastContainer />
+
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MagicMotion, MagicTabSelect } from 'react-magic-motion';
+import { MagicMotion } from 'react-magic-motion';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -53,7 +53,7 @@ function Navbar() {
                     to="/contact"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                   >
-                    Contatos
+                    Contato
                   </Link>
                   <Link
                     to="/certificates"
@@ -120,7 +120,7 @@ function Navbar() {
                   to="/contact"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Contatos
+                  Contato
                 </Link>
                 <Link
                   to="/certificates"
