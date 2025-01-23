@@ -61,7 +61,7 @@ function Navbar() {
                   >
                     Certificados
                   </Link>
-                  <a href="https://drive.google.com/file/d/1Qxi5ekINuGq6UhctYHARPyMJEqIzQr-0/view?usp=sharing" 
+                  <a href="https://drive.google.com/file/d/1UeHI73hdxnqsJR8x2Eg2YBWE54NHmZgI/view?usp=drive_link" 
                     target="_blank" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Download CV</a>
                 </div>
               </div>
